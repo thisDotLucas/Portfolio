@@ -1,0 +1,211 @@
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    font-family: "DejaVu Sans Mono", sans-serif;
+    margin: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+p {
+    font-size: 0.7em;
+    line-height: 1.6em;
+    color: #707070;
+
+}
+
+header {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+.underline {
+    border-bottom: 2px solid #5F6ECE;
+    padding-bottom: 0px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    text-align: center;
+    padding: .8em;
+    margin-bottom: 450px;
+}
+
+
+.head-tag-div > p {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 6.5em;
+}
+
+
+.head-tag {
+    font-size: 1.7em;
+    margin: 0;
+}
+
+.emoji {
+    font-size:1.3em;
+}
+
+.sub-head-tag{
+    font-size: 1em;
+    margin: 0;
+}
+
+.white-space{
+   margin-top: 150%;
+}
+
+
+.hero {
+    display: inline-block;
+    text-align: left;
+}
+
+.about{
+    display: inline-block;
+    text-align: left;
+}
+
+.projects{
+    display: inline-block;
+    text-align: left;
+}
+
+.project-name{
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+button{
+    background-color: white; /* Green */
+    border: 2px solid #5F6ECE;
+    color: black;
+    padding: 8px 25px;
+    text-align: center;
+    font-family: "DejaVu Sans Mono", sans-serif;
+    font-size: .8em;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #5F6ECE;
+    color: white;
+    cursor: pointer;
+}
+
+nav > ul {
+    position: fixed;
+    width: 45%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: #F7F7F7;
+    height: 100%;
+    z-index: 8;
+    padding-top: 3em;
+}
+
+nav > ul > li > a {
+    color: #707070;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background: #F7F7F7;
+    cursor: pointer;
+}
+
+nav > ul > li > a:hover{
+    color: white;
+    background-color: #707070;
+}
+
+.exit-btn{
+    margin-top: -1.3em;
+    margin-bottom: 1em;
+    text-align: right;
+    padding: 0 1.4em;
+}
+
+.exit-btn-img{
+    cursor: pointer;
+}
+
+.big-img{
+    display: none;
+}
+
+.small-img{
+    display: unset;
+}
+.orange-triangle-right {
+    width: 0;
+    height: 0;
+
+    border-top: 150px solid transparent;
+    border-left: 330px solid #EF9A1A;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .head-tag {
+        font-size: 3.06em;
+        margin: 0;
+    }
+
+    .emoji{
+        font-size: 2.34em;
+    }
+
+    .sub-head-tag{
+        font-size: 1.8em;
+        margin: 0;
+    }
+
+    .project-name{
+        font-size: 1.8em;
+    }
+
+    .small-img{
+        display: none;
+    }
+
+    .big-img{
+        display: unset;
+    }
+
+    p{
+        font-size: 0.9em;
+    }
+
+}
+
+@media only screen and (max-height: 450px){
+    .orange-triangle-right {
+        display: none;
+    }
+}
+
