@@ -1,165 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/main.css">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="css/main.css">
 
-</head>
-<body>
-<div class="container">
+    </head>
+    <body>
+    <div class="container">
 
 
-    <!-- Header -->
-    <header>
-        <nav>
-            <a href="#" class="hide-desktop"><img src="images/menu_icon.svg" alt="Menu" class="menu" id="menu"></a>
+        <!-- Header -->
+        <header>
+            <nav>
+                <a href="#" class="hide-desktop"><img src="images/menu_icon.svg" alt="Menu" class="menu" id="menu"></a>
 
-            <ul class="show-desktop hide-mobile" id="nav">
-                <li id="exit" class="exit-btn hide-desktop"><img src="images/close.png" class="exit-btn-img"></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="images/close.png" class="exit-btn-img"></li>
+                    <li onmouseover="this.className='hover';" onmouseout="this.className='';"><a href="#" class="header-link">Home</a></li>
+                    <li onmouseover="this.className='hover';" onmouseout="this.className='';"><a href="#about" class="header-link">About</a></li>
+                    <li onmouseover="this.className='hover';" onmouseout="this.className='';"><a href="#projects" class="header-link">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <div class="white-space" id="before-hero"></div>
+        <div class="white-space" id="before-hero"></div>
 
-    <!-- Home -->
-    <div style="text-align: center">
-        <section class="hero">
+        <!-- Home -->
+        <div style="text-align: center">
+            <section class="hero">
 
-            <div class="head-tag-div">
-                <p class="head-tag" style="color: black">Hi </p>
-                <p class="emoji">🙋‍♂</p>
+                <div class="head-tag-div">
+                    <p class="head-tag" style="color: black">Hi </p>
+                    <p class="emoji">🙋‍♂</p>
+                </div>
+                <p class="sub-head-tag">My name is <b style="color: black">Lucas Fransman</b>.</p>
+                <p class="head-text">I am a second year Computer Science student at Åbo Akademi
+                    University, with a passion for creating useful and/or cool software. </p>
+                <p class="contact-text">Get in touch: <a class="underline">lucas.fransman@gmail.com</a></p>
+
+            </section>
+
+
+            <div class="white-space"></div>
+
+            <!-- About -->
+            <div class="about" id="about">
+
+                <ul>
+                    <li>
+                        <img src="images/me-medium.jpg" class="me-img big-img">
+                    </li>
+                    <li class="me-description">
+
+                        <p class="project-name">About Me</p>
+
+                        <p>
+                            Tellus at urna condimentum mattis. Eget magna fermentum iaculis eu non. Elementum curabitur vitae nunc sed velit dignissim sodales. Venenatis a condimentum vitae sapien pellentesque habitant. Id faucibus nisl tincidunt eget nullam non. Sed ullamcorper morbi tincidunt ornare. Suscipit adipiscing bibendum est ultricies integer quis.
+                        </p>
+
+                        <button type="button" onclick="window.open('https://docs.google.com/document/d/1wSu8rWxQRH19g-f05AaqT0-pPJMUkdxArZw-os-mrhQ/edit?usp=sharing')" class="resume-btn" id="resume-btn">View Resume</button>
+                    </li>
+                </ul>
+
             </div>
-            <p class="sub-head-tag">My name is <b style="color: black">Lucas Fransman</b>.</p>
-            <p class="head-text">I am a second year Computer Science student at Åbo Akademi
-                University, with a passion for creating useful and/or cool software. </p>
-            <p class="contact-text">Get in touch: <a class="underline">lucas.fransman@gmail.com</a></p>
-
-        </section>
-
-
-        <div class="white-space"></div>
-
-        <!-- About -->
-        <div class="about">
-
-            <ul>
-                <li>
-                    <img src="images/me-medium.jpg" class="me-img big-img">
-                </li>
-                <li class="me-description">
-
-                    <p class="project-name">About Me</p>
-
-                    <p>
-                        Tellus at urna condimentum mattis. Eget magna fermentum iaculis eu non. Elementum curabitur vitae nunc sed velit dignissim sodales. Venenatis a condimentum vitae sapien pellentesque habitant. Id faucibus nisl tincidunt eget nullam non. Sed ullamcorper morbi tincidunt ornare. Suscipit adipiscing bibendum est ultricies integer quis.
-                    </p>
-
-                    <button type="button" class="resume-btn" id="resume-btn">View Resume</button>
-                </li>
-            </ul>
-
-        </div>
-
-
-        <div class="white-space"></div>
-
-
-        <!--  Projects -->
-        <div class="projects">
-
-            <!-- Project 1 -->
-
-            <p class="project-name small-img medium-img">Factory Manager</p>
-
-            <ul>
-                <li>
-                    <img src="images/factoryManager-small.PNG" class="project-img small-img">
-                    <img src="images/factoryManager-medium.PNG" class="project-img medium-img">
-                    <img src="images/factoryManager-big.PNG" class="project-img big-img">
-                </li>
-                <li class="project-description">
-
-                    <p class="project-name big-img">Factory Manager</p>
-
-                    <p>This project is meant to be used to keep track of the work progress and employees in a factory environment. It has a MySQL database running in AWS RDS. I also built a python script that fills the database daily with mock data.</p>
-
-                    <p class="second-sub-tag">Built Using:</p>
-
-                    <ul class="technologies-used">
-                        <li><p>- Java & JavaFx</p></li>
-                        <li><p>- MySQL</p></li>
-                        <li><p>- Python</p></li>
-                        <li><p>- Aws EC2 & RDS</p></li>
-                    </ul>
-
-                    <button type="button" class="github-btn" id="project1-btn">Github Page</button>
-
-                </li>
-            </ul>
-
-
 
 
             <div class="white-space"></div>
 
 
-            <!-- Project 2 -->
+            <!--  Projects -->
+            <div class="projects" id="projects">
 
-            <p class="project-name small-img medium-img">Weather Dash</p>
+                <!-- Project 1 -->
 
-            <ul>
-                <li>
-                    <img src="images/weatherDash-small.png" class="project-img small-img">
-                    <img src="images/weatherDash-medium.png" class="project-img medium-img">
-                    <img src="images/weatherDash-big.png" class="project-img big-img">
-                </li>
-                <li class="project-description">
+                <p class="project-name small-img medium-img">Factory Manager</p>
 
-                    <p class="project-name big-img">Weather Dash</p>
+                <ul>
+                    <li>
+                        <img src="images/factoryManager-small.PNG" class="project-img small-img">
+                        <img src="images/factoryManager-medium.PNG" class="project-img medium-img">
+                        <img src="images/factoryManager-big.PNG" class="project-img big-img">
+                    </li>
+                    <li class="project-description">
 
-                    <p>Weather Dash is a graphical user interface that graphs temperature and humidity data from the OpenWeatherMap API and compares it to an Arduino sensor.</p>
+                        <p class="project-name big-img">Factory Manager</p>
 
-                    <p class="second-sub-tag">Built Using:</p>
+                        <p>This project is meant to be used to keep track of the work progress and employees in a factory environment. It has a MySQL database running in AWS RDS. I also built a python script that fills the database daily with mock data.</p>
 
-                    <ul class="technologies-used">
-                        <li><p>- Java & JavaFx</p></li>
-                        <li><p>- Arduino IDE/C++</p></li>
-                    </ul>
+                        <p class="second-sub-tag">Built Using:</p>
 
-                    <button type="button" class="github-btn" id="project2-btn">Github Page</button>
-                </li>
-            </ul>
+                        <ul class="technologies-used">
+                            <li><p>- Java & JavaFx</p></li>
+                            <li><p>- MySQL</p></li>
+                            <li><p>- Python</p></li>
+                            <li><p>- Aws EC2 & RDS</p></li>
+                        </ul>
+
+                        <button type="button" onclick="window.open('https://github.com/thisDotLucas/FactoryManager')" class="github-btn" id="project1-btn">Github Page</button>
+
+                    </li>
+                </ul>
+
+
+
+
+                <div class="white-space"></div>
+
+
+                <!-- Project 2 -->
+
+                <p class="project-name small-img medium-img">Weather Dash</p>
+
+                <ul>
+                    <li>
+                        <img src="images/weatherDash-small.png" class="project-img small-img">
+                        <img src="images/weatherDash-medium.png" class="project-img medium-img">
+                        <img src="images/weatherDash-big.png" class="project-img big-img">
+                    </li>
+                    <li class="project-description">
+
+                        <p class="project-name big-img">Weather Dash</p>
+
+                        <p>Weather Dash is a graphical user interface that graphs temperature and humidity data from the OpenWeatherMap API and compares it to an Arduino sensor.</p>
+
+                        <p class="second-sub-tag">Built Using:</p>
+
+                        <ul class="technologies-used">
+                            <li><p>- Java & JavaFx</p></li>
+                            <li><p>- Arduino IDE/C++</p></li>
+                        </ul>
+
+                        <button type="button" onclick="window.open('https://github.com/thisDotLucas/WeatherDash')" class="github-btn" id="project2-btn">Github Page</button>
+                    </li>
+                </ul>
+
+            </div>
 
         </div>
-
     </div>
-</div>
 
-<div class="white-space" id="before-footer"></div>
+    <div class="white-space" id="before-footer"></div>
 
-<footer>
+    <footer>
 
-    <div class="orange-triangle-right" id="orange-triangle-right">
-        <div class="sm-icons">
-            <ul>
-                <!--<li><img src="images/github.svg">hi</li>
-                <li><img src="images/linkedin.svg">hello</li>-->
+        <div class="orange-triangle-right" id="orange-triangle-right">
+           <ul class="social-media-icons">
+                <li class="social-media-icon" onmouseover="this.className='hover';" onmouseout="this.className='';"><img src="images/github.svg" style="cursor: pointer" onclick="window.open('https://github.com/thisDotLucas/')"></li>
+                <li class="social-media-icon" onmouseover="this.className='hover';" onmouseout="this.className='';"><img src="images/linkedIn.svg" style="cursor: pointer" onclick="window.open('https://www.linkedin.com/in/lucasFransman')"></li>
             </ul>
         </div>
-    </div>
 
-</footer>
+    </footer>
 
-</body>
-</html>
+    </body>
+    </html>
 
-<script type ="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script type ="text/javascript" src="scripts/footer.js" defer></script>
-<script type ="text/javascript" src="scripts/whitespace.js" defer></script>
+    <script type ="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type ="text/javascript" src="scripts/footer.js" defer></script>
+    <script type ="text/javascript" src="scripts/whitespace.js" defer></script>
+    <script type ="text/javascript" src="scripts/navBar.js" defer></script>

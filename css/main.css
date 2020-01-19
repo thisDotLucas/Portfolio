@@ -132,36 +132,40 @@
 
     nav > ul {
         position: fixed;
-        width: 45%;
+        width: 100%;
         top: 0;
         right: 0;
         text-align: left;
-        background: #F7F7F7;
+        background: #5F6ECE;
+        opacity: 0.52;
         height: 100%;
-        z-index: 8;
+        z-index: 6;
         padding-top: 3em;
     }
 
     nav > ul > li > a {
-        color: #707070;
+        color: white;
         text-decoration: none;
         display: block;
         width: 100%;
         padding: 1em 2em;
-        background: #F7F7F7;
         cursor: pointer;
+        z-index: 6;
+
     }
 
     nav > ul > li > a:hover{
-        color: white;
-        background-color: #707070;
+        background-color: #4E56CE;
+        z-index: 6;
     }
 
     .exit-btn{
         margin-top: -1.3em;
         margin-bottom: 1em;
-        text-align: right;
+        color: white;
+        text-align: left;
         padding: 0 1.4em;
+
     }
 
     .exit-btn-img{
@@ -182,16 +186,32 @@
     .orange-triangle-right {
         width: 0;
         height: 0;
-
-        border-top: 150px solid transparent;
-        border-left: 330px solid #EF9A1A;
+        z-index: 7;
     }
 
     .menu {
-        position: fixed;
+        position: absolute;
         top: 0;
         right: 0;
         padding-right: 1.2em;
+    }
+
+
+    .social-media-icons {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        margin-left: 2em;
+        float: left;
+    }
+
+    .social-media-icons > li > img{
+
+        width: 34px;
+        height: 29px;
+        margin: 0 .5em 1em .5em;
+        z-index: 8;
     }
 
     @media only screen and (min-width: 600px) {
@@ -257,34 +277,41 @@
         nav > ul {
             position: inherit;
             width: auto;
+            opacity: unset;
             height: auto;
             background: none;
             display: flex;
             padding-top: 0;
-            padding-right: 5em;
+            padding-right: 0em;
+            margin-right: 4em;
         }
 
         nav > ul > li {
             float: left;
-            margin-left: 0;
+            margin-left: 4em;
         }
 
         nav > ul > li > a {
-            color: black;
+            color: #343434;
+            opacity: 100%;
             background-color: inherit;
             text-align: right;
             font-size: 1.01em;
-            padding: 1em 2em;
+            padding: 0em 0em;
         }
 
         nav > ul > li > a:hover{
             background-color: inherit;
-            color: inherit;
+            color: black;
         }
 
-
+        .social-media-icons > li > img{
+            width: 41px;
+            height: 35px;
+        }
 
     }
+
 
     @media only screen and (min-width: 1450px) {
 
@@ -360,26 +387,23 @@
             height: auto;
             background: none;
             display: flex;
-            padding-top: 0;
-            padding-right: 15em;
+            padding-top: 1em;
+            margin-right: 10em;
+
         }
 
         nav > ul > li {
             float: left;
-            margin-left: 0;
+            margin-left: 6em;
         }
 
         nav > ul > li > a {
-            color: black;
+
             background-color: inherit;
             text-align: right;
             font-size: 1.4em;
-            padding: 1em 2em;
-        }
+            padding: 0.3em 0.6em 0.3em 0em;
 
-        nav > ul > li > a:hover{
-            background-color: inherit;
-            color: inherit;
         }
 
         .about > ul {
@@ -391,7 +415,18 @@
             padding-right: 5%;
         }
 
+        .social-media-icons > li > img{
+            width: 51px;
+            height: 43px;
+        }
 
+    }
+
+
+
+    .hover {
+        position: relative;
+        top: -3px; /* this will raise the element */
     }
 
     @media only screen and (max-height: 450px){
