@@ -1,20 +1,23 @@
-// Size of browser viewport.
 
 
-$(window).resize(sizeTriangle());
+    $(document).ready(function () {
+
+        sizeTriangle($(window).width(), $(window).height());
+
+        $(window).resize(function () {
+
+            sizeTriangle($(window).width(), $(window).height())
+
+        });
+    });
 
 
-function sizeTriangle(){
-    let x = $(window).width();
-    alert(x);
-    console.log("done")
-}
+    function sizeTriangle(windowWidth, windowHeight){
 
-//$(window).height();
-//$(window).width();
+        let triangle = document.getElementById("orange-triangle-right");
 
-// Size of HTML document (same as pageHeight/pageWidth in screenshot).
-//$(document).height();
-//$(document).width();
+        triangle.style.borderTop = windowHeight * 0.2 + "px solid transparent";
+        triangle.style.borderLeft = windowWidth * 0.9 + "px solid #EF9A1A";
 
-//$("#right-triangle").attr("triangle-right");
+    }
+
