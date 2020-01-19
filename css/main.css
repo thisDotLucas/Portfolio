@@ -25,6 +25,10 @@ header {
     right: 5%;
 }
 
+img {
+    padding-top: 1em;
+}
+
 .hide-mobile {
     display: none;
 }
@@ -70,6 +74,11 @@ ul {
     margin: 0;
 }
 
+.second-sub-tag{
+    color: black;
+    font-weight: bold;
+}
+
 .white-space{
    margin-top: 150%;
 }
@@ -78,11 +87,13 @@ ul {
 .hero {
     display: inline-block;
     text-align: left;
+
 }
 
 .about{
     display: inline-block;
     text-align: left;
+
 }
 
 .projects{
@@ -96,6 +107,11 @@ ul {
     font-size: 1em;
 }
 
+.technologies-used > li  {
+    padding-left: 0.3em;
+
+}
+
 button{
     background-color: white; /* Green */
     border: 2px solid #5F6ECE;
@@ -104,7 +120,7 @@ button{
     text-align: center;
     font-family: "DejaVu Sans Mono", sans-serif;
     font-size: .8em;
-    margin: 4px 2px;
+    margin: 15px 2px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
@@ -158,6 +174,10 @@ nav > ul > li > a:hover{
     display: none;
 }
 
+.medium-img{
+    display: none;
+}
+
 .small-img{
     display: unset;
 }
@@ -193,13 +213,140 @@ nav > ul > li > a:hover{
         display: none;
     }
 
-    .big-img{
+    .medium-img{
         display: unset;
     }
+
+    .big-img{
+        display: none;
+    }
+
+    .about{
+        margin-right: 15%;
+        margin-left: 11.25%;
+    }
+
+    .hero{
+        margin-right: 15%;
+        margin-left: 11.25%;
+    }
+
+    .projects {
+        margin-right: 15%;
+        margin-left: 11.25%;
+    }
+
 
     p{
         font-size: 0.9em;
     }
+
+}
+
+@media only screen and (min-width: 1450px) {
+    .small-img{
+        display: none;
+    }
+
+    .medium-img{
+        display: none;
+    }
+
+    .big-img{
+        display: unset;
+    }
+
+    .head-tag {
+        font-size: 4.1em;
+        margin: 0;
+    }
+
+    .emoji{
+        font-size: 3.1em;
+    }
+
+    .sub-head-tag{
+        font-size: 2.4em;
+        margin: 0;
+    }
+
+    .project-name{
+        font-size: 1.9em;
+    }
+
+    .about {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .hero {
+        margin-right: 30%;
+        margin-left: 22.5%;
+    }
+
+    .projects {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .projects > ul{
+        display: flex;
+    }
+
+    .project-description{
+        margin-top: 8%;
+        margin-left: 7%;
+    }
+
+    p{
+        font-size: 1em;
+    }
+
+    .show-desktop {
+        display: block;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    nav > ul {
+        position: inherit;
+        width: auto;
+        height: auto;
+        background: none;
+        display: flex;
+        padding-top: 0;
+        padding-right: 15em;
+    }
+
+    nav > ul > li {
+        float: left;
+        margin-left: 0;
+    }
+
+    nav > ul > li > a {
+        color: black;
+        background-color: inherit;
+        text-align: right;
+        font-size: 1.4em;
+        padding: 1em 2em;
+    }
+
+    nav > ul > li > a:hover{
+        background-color: inherit;
+        color: inherit;
+    }
+
+    .about > ul {
+        display: flex;
+    }
+
+    .me-description{
+        margin-left: 6%;
+        padding-right: 5%;
+    }
+
 
 }
 
