@@ -47,6 +47,8 @@
         padding: 0;
     }
 
+
+
     .container{
         text-align: center;
         padding: .8em;
@@ -110,6 +112,15 @@
     .technologies-used > li  {
         padding-left: 0.3em;
 
+    }
+
+    .skill-colon{
+        display: inline-block;
+        margin-left: 1em;
+    }
+
+    .not-initial-colon {
+        margin-left: 2em;
     }
 
     button{
@@ -216,7 +227,7 @@
         z-index: 8;
     }
 
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 800px) {
 
         .head-tag {
             font-size: 3.06em;
@@ -274,6 +285,14 @@
 
         .hide-desktop {
             display: none;
+        }
+
+        .skill-colon{
+            margin-left: 1.2em;
+        }
+
+        .not-initial-colon {
+            margin-left: 3em;
         }
 
         nav > ul {
@@ -383,6 +402,13 @@
             display: none;
         }
 
+        .skill-colon{
+            margin-left: 1.5em;
+        }
+
+        .not-initial-colon {
+            margin-left: 5em;
+        }
         nav > ul {
             position: inherit;
             width: auto;
@@ -417,6 +443,10 @@
             padding-right: 5%;
         }
 
+        .me-img {
+            margin-top: .3em;
+        }
+
         .social-media-icons > li > img{
             width: 51px;
             height: 43px;
@@ -424,12 +454,6 @@
 
     }
 
-
-
-    .hover {
-        position: relative;
-        top: -3px; /* this will raise the element */
-    }
 
     @media only screen and (max-height: 450px){
         .orange-triangle-right {
