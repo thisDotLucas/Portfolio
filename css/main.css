@@ -227,6 +227,11 @@
         z-index: 8;
     }
 
+    .skills-sub-tag {
+        margin-bottom: .5em
+    ;
+    }
+
     @media only screen and (min-width: 800px) {
 
         .head-tag {
@@ -334,7 +339,7 @@
     }
 
 
-    @media only screen and (min-width: 1450px) {
+    @media only screen and (min-width: 1430px) {
 
         .small-img{
             display: none;
