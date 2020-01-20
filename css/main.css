@@ -8,7 +8,7 @@
     }
 
     body {
-        font-family: "Roboto Mono", sans-serif;
+        font-family: 'Roboto Mono', monospace;, sans-serif;
         margin: 0;
         padding-left: 10%;
         padding-right: 10%;
@@ -37,7 +37,7 @@
 
     .underline {
         border-bottom: 2px solid #5F6ECE;
-        padding-bottom: 0px;
+        padding-bottom: 0;
 
     }
 
@@ -129,7 +129,7 @@
         color: black;
         padding: 8px 25px;
         text-align: center;
-        font-family: "Roboto Mono", sans-serif;
+        font-family: 'Roboto Mono', monospace, sans-serif;
         font-size: .8em;
         margin: 15px 2px;
         -webkit-transition-duration: 0.4s; /* Safari */
