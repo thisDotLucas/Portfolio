@@ -16,10 +16,28 @@
         event.preventDefault();
     });
 
+    $('#nav a').click(function( e ) {
+        e.preventDefault();
+        let targetId = $(this).attr("href");
 
-    window.addEventListener("hashchange", function () {
-        window.scrollTo(window.scrollX, window.scrollY - $(window).height()*.1);
+        let top;
+
+        if (targetId.valueOf() === "#home") {
+
+            top = 0;
+
+        } else {
+
+            top = $(targetId).offset().top - $(window).height() * .1;
+
+        }
+
+        $('html, body').stop().animate({scrollTop: top }, 700);
     });
+
+
+
+
 
 
 
