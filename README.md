@@ -1,4 +1,4 @@
 # Portfolio
 My portfolio website.</br>
-Check it out: https://www.thidotlucas.com
+Check it out: https://www.thisdotlucas.com
 
