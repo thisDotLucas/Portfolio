@@ -31,10 +31,8 @@ img {
     padding-top: 1em;
 }
 
-@media screen and (max-width: 1150px) {
-    .hide-laptop {
-        display: none;
-    }
+.show-laptop {
+    display: none;
 }
 
 
@@ -255,6 +253,9 @@ nav>ul>li>a:hover {
         margin: 0;
     }
 
+    .show-laptop {
+        display: none;
+    }
 
     .emoji {
         font-size: 2.34em;
@@ -374,6 +375,10 @@ nav>ul>li>a:hover {
 
         .small-img{
             display: none;
+        }
+
+        .show-laptop {
+            display: block;
         }
 
         .medium-img{
