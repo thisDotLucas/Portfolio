@@ -266,6 +266,11 @@ nav>ul>li>a:hover {
     .big-img {
         display: none;
     }
+    .emoji {
+        width: 25px;
+        height: auto;
+        object-fit: contain;
+    }
 
     .about {
         margin-right: 15%;
@@ -378,6 +383,50 @@ nav>ul>li>a:hover {
         margin-right: auto;
         margin-left: auto;
     }
+    @media only screen and (min-width: 800px) {
+
+        .head-tag {
+            font-size: 3.06em;
+            margin: 0;
+        }
+
+
+        .emoji {
+            width: 36px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .sub-head-tag{
+            font-size: 1.8em;
+            margin: 0;
+        }
+
+        .project-name{
+            font-size: 1.8em;
+        }
+
+        .small-img{
+            display: none;
+        }
+
+        .medium-img{
+            display: unset;
+        }
+
+        .big-img{
+            display: none;
+        }
+
+        .about{
+            margin-right: 15%;
+            margin-left: 11.25%;
+        }
+
+        .hero{
+            margin-right: 15%;
+            margin-left: 11.25%;
+        }
 
     .hero {
         margin-right: 30%;
@@ -417,6 +466,71 @@ nav>ul>li>a:hover {
     .not-initial-colon {
         margin-left: 5em;
     }
+        nav > ul > li {
+            float: left;
+            margin-left: 4em;
+        }
+
+        nav > ul > li > a {
+            color: #343434;
+            opacity: 100%;
+            background-color: inherit;
+            text-align: right;
+            font-size: 1.01em;
+            padding: 0 0;
+        }
+
+        nav > ul > li > a:hover{
+            background-color: inherit;
+            color: black;
+        }
+
+        .social-media-icons > li > img{
+            width: 41px;
+            height: 35px;
+        }
+
+    }
+
+
+    @media only screen and (min-width: 1279px) {
+
+        .small-img{
+            display: none;
+        }
+
+        .medium-img{
+            display: none;
+        }
+
+        .big-img{
+            display: unset;
+        }
+
+        .head-tag {
+            font-size: 4.1em;
+            margin: 0;
+        }
+
+        .emoji {
+            width: 50px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .sub-head-tag{
+            font-size: 2.4em;
+            margin: 0;
+        }
+
+        .project-name{
+            font-size: 1.9em;
+        }
+
+        .about {
+            margin-right: auto;
+            margin-left: auto;
+        }
 
     nav>ul {
         position: inherit;
