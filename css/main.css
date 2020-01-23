@@ -31,8 +31,10 @@ img {
     padding-top: 1em;
 }
 
-.hide-mobile {
-    display: none;
+@media screen and (max-width: 1150px) {
+    .hide-laptop {
+        display: none;
+    }
 }
 
 .underline {
@@ -237,12 +239,19 @@ nav>ul>li>a:hover {
     margin-bottom: .5em;
 }
 
+.projects > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 @media only screen and (min-width: 650px) {
 
     .head-tag {
         font-size: 3.06em;
         margin: 0;
     }
+
 
     .emoji {
         font-size: 2.34em;
@@ -349,48 +358,11 @@ nav>ul>li>a:hover {
 }
 
 
-@media only screen and (min-width: 1279px) {
 
-    .small-img {
-        display: none;
-    }
-
-    .medium-img {
-        display: none;
-    }
-
-    .big-img {
-        display: unset;
-    }
-
-    .head-tag {
-        font-size: 4.1em;
-        margin: 0;
-    }
-
-    .emoji {
-        font-size: 3.1em;
-    }
-
-    .sub-head-tag {
-        font-size: 2.4em;
-        margin: 0;
-    }
-
-    .project-name {
-        font-size: 1.9em;
-    }
-
-    .about {
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
-
-    @media only screen and (min-width: 1279px) {
+    @media only screen and (min-width: 1379px) {
 
         p {
-            font-size: 1.1em;
+            font-size: .9em;
         }
 
         .small-img{
@@ -421,6 +393,15 @@ nav>ul>li>a:hover {
             margin: 0;
         }
 
+        .projects {
+           margin-left: 0;
+           margin-right: 3%;
+        }
+
+        .projects > ul {
+            flex-direction: row;
+        }
+
         .project-name{
             font-size: 1.9em;
         }
@@ -430,7 +411,7 @@ nav>ul>li>a:hover {
             margin-left: auto;
         }
 
-    nav>ul {
+    nav ul {
         position: inherit;
         width: auto;
         height: auto;
@@ -440,8 +421,11 @@ nav>ul>li>a:hover {
         margin-right: 10em;
 
     }
+    .project-description {
+        margin-left: 2.5em;
+    }
 
-    nav>ul>li {
+    nav ul li {
         float: left;
         margin-left: 6em;
     }
@@ -472,6 +456,7 @@ nav>ul>li>a:hover {
         width: 51px;
         height: 43px;
     }
+
 
 }
 
