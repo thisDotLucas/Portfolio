@@ -476,3 +476,7 @@ a {
 a:hover {
     color: #343434;
 }
+
+.hide-mobile {
+    display: none;
+}
