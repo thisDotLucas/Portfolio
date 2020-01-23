@@ -24,9 +24,9 @@
 
             <ul class="show-desktop hide-mobile" id="nav">
                 <li id="exit" class="exit-btn hide-desktop"><img src="images/close.png" class="exit-btn-img"></li>
-                <li onmouseover="this.className='hover';" onmouseout="this.className='';"><a href="#home" class="header-link">Home</a></li>
-                <li onmouseover="this.className='hover';" onmouseout="this.className='';"><a href="#about" class="header-link">About</a></li>
-                <li onmouseover="this.className='hover';" onmouseout="this.className='';"><a href="#projects" class="header-link">Projects</a></li>
+                <li><a href="#home" class="header-link hover">Home</a></li>
+                <li><a href="#about" class="header-link hover">About</a></li>
+                <li><a href="#projects" class="header-link hover">Projects</a></li>
             </ul>
         </nav>
     </header>
@@ -43,7 +43,7 @@
             </div>
             <p class="sub-head-tag">My name is <b style="color: black">Lucas Fransman</b>.</p>
             <p class="head-text">I am a second year Computer Science student at Åbo Akademi University, with a passion for creating useful and/or cool software. </p>
-            <p class="contact-text">Get in touch: <a class="underline">lucas.fransman@gmail.com</a></p>
+            <p class="contact-text">Get in touch: <a href="mailto:lucas.fransman@gmail.com" class="underline hover">lucas.fransman@gmail.com</a></p>
 
         </section>
 
@@ -100,7 +100,7 @@
                     </div>
 
                     <div>
-                        <button type="button" onclick="window.open('https://www.dropbox.com/s/zaryq755rlm9lzt/Lucas%20Fransman%20Resume.pdf?dl=0')" class="resume-btn" id="resume-btn">View Resume</button>
+                        <a type="button" target="_blank" href="https://www.dropbox.com/s/zaryq755rlm9lzt/Lucas%20Fransman%20Resume.pdf?dl=0" class="button" id="resume-btn">View Resume</a>
                     </div>
                 </li>
             </ul>
@@ -145,7 +145,7 @@
                         </li>
                     </ul>
 
-                    <button type="button" onclick="window.open('https://github.com/thisDotLucas/FactoryManager')" class="github-btn" id="project1-btn">Github Page</button>
+                    <a type="button" target="_blank" href="https://github.com/thisDotLucas/FactoryManager" class="button" id="project1-btn">Github Page</a>
 
                 </li>
             </ul>
@@ -179,7 +179,7 @@
                         </li>
                     </ul>
 
-                    <button type="button" onclick="window.open('https://github.com/thisDotLucas/WeatherDash')" class="github-btn" id="project2-btn">Github Page</button>
+                    <a type="button" target="_blank" href="https://github.com/thisDotLucas/WeatherDash" class="button" id="project2-btn">Github Page</a>
                 </li>
             </ul>
 
@@ -194,8 +194,8 @@
 
     <div class="orange-triangle-right" id="orange-triangle-right">
         <ul class="social-media-icons">
-            <li class="social-media-icon" onmouseover="this.className='hover';" onmouseout="this.className='';"><img src="images/github.svg" alt="My Github Page" style="cursor: pointer" onclick="window.open('https://github.com/thisDotLucas/')"></li>
-            <li class="social-media-icon" onmouseover="this.className='hover';" onmouseout="this.className='';"><img src="images/linkedIn.svg" alt="My Linked in Page" style="cursor: pointer" onclick="window.open('https://www.linkedin.com/in/lucasFransman')"></li>
+            <li class="social-media-icon"><a href="https://github.com/thisDotLucas/" target="_blank"><img src="images/github.svg" class="hover" alt="My Github Page"></a></li>
+            <li class="social-media-icon"><a href="https://www.linkedin.com/in/lucasFransman" target="_blank"><img src="images/linkedIn.svg" class="hover" alt="My Linked in Page"></a></li>
         </ul>
     </div>
 
