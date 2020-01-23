@@ -137,7 +137,7 @@ ul {
     margin: 15px 2px;
     -webkit-transition-duration: 0.4s;
     text-decoration: none;
-    /* Safari */
+    display: inline-block;
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -237,7 +237,7 @@ nav>ul>li>a:hover {
     margin-bottom: .5em;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 650px) {
 
     .head-tag {
         font-size: 3.06em;
@@ -386,115 +386,6 @@ nav>ul>li>a:hover {
         margin-left: auto;
     }
 }
-    @media only screen and (min-width: 800px) {
-
-        .head-tag {
-            font-size: 3.06em;
-            margin: 0;
-        }
-
-
-        .emoji {
-            width: 36px;
-            height: auto;
-            object-fit: contain;
-        }
-
-        .sub-head-tag{
-            font-size: 1.8em;
-            margin: 0;
-        }
-
-        .project-name{
-            font-size: 1.8em;
-        }
-
-        .small-img{
-            display: none;
-        }
-
-        .medium-img{
-            display: unset;
-        }
-
-        .big-img{
-            display: none;
-        }
-
-        .about{
-            margin-right: 15%;
-            margin-left: 11.25%;
-        }
-
-        .hero{
-            margin-right: 15%;
-            margin-left: 11.25%;
-        }
-
-    .hero {
-        margin-right: 30%;
-        margin-left: 22.5%;
-    }
-
-    .projects {
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .projects>ul {
-        display: flex;
-    }
-
-    .project-description {
-        margin-top: 8%;
-        margin-left: 7%;
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    .show-desktop {
-        display: block;
-    }
-
-    .hide-desktop {
-        display: none;
-    }
-
-    .skill-colon {
-        margin-left: 1.5em;
-    }
-
-    .not-initial-colon {
-        margin-left: 5em;
-    }
-        nav > ul > li {
-            float: left;
-            margin-left: 4em;
-        }
-
-        nav > ul > li > a {
-            color: #343434;
-            opacity: 100%;
-            background-color: inherit;
-            text-align: right;
-            font-size: 1.01em;
-            padding: 0 0;
-        }
-
-        nav > ul > li > a:hover{
-            background-color: inherit;
-            color: black;
-        }
-
-        .social-media-icons > li > img{
-            width: 41px;
-            height: 35px;
-        }
-
-    }
-
 
     @media only screen and (min-width: 1279px) {
 
