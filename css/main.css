@@ -37,6 +37,7 @@ img {
     }
 }
 
+
 .underline {
     border-bottom: 2px solid #5F6ECE;
     padding-bottom: 0;
@@ -89,7 +90,9 @@ ul {
     margin-top: 150%;
 }
 
-
+.hide-mobile {
+    display: none;
+}
 .hero {
     display: inline-block;
     text-align: left;
@@ -183,8 +186,8 @@ nav>ul>li>a:hover {
     margin-top: -1.3em;
     margin-bottom: 1em;
     color: white;
-    text-align: left;
-    padding: 0 1.4em;
+    text-align: right;
+    padding: 0 2.6em;
 
 }
 
@@ -311,6 +314,10 @@ nav>ul>li>a:hover {
         display: none;
     }
 
+    .hide-mobile{
+        display: block;
+    }
+
     .skill-colon {
         margin-left: 1.2em;
     }
@@ -373,6 +380,9 @@ nav>ul>li>a:hover {
             display: none;
         }
 
+        .hide-mobile {
+            display: block;
+        }
         .big-img{
             display: unset;
         }
@@ -477,6 +487,3 @@ a:hover {
     color: #343434;
 }
 
-.hide-mobile {
-    display: none;
-}
