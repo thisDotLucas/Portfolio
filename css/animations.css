@@ -1,12 +1,15 @@
-
-
 .hover {
-    position: relative;
-    top: -3px; /* this will raise the element */
+    transition: 0.4s all ease;
+    will-change: transform;
+    transform: translateY(0px);
+}
+
+.hover:hover {
+    transform: translateY(-3px);
+    /* this will raise the element */
 }
 
 button {
     transition: 0.4s all ease;
     position: relative;
 }
-
