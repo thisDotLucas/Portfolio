@@ -68,7 +68,9 @@ ul {
 }
 
 .emoji {
-    font-size: 1.3em;
+    width: 25px;
+    height: auto;
+    object-fit: contain;
 }
 
 .sub-head-tag {
